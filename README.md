@@ -16,7 +16,7 @@ It has an extensive script for a high amount of personality and situational awar
    * Surprise:
      * While falling a far distance
      * While moving very fast
-     * While riding a minecart as maximum speed
+     * While riding a minecart at maximum speed
      * While burning (when not fireproof)
      * While levitating
      * While glowing
@@ -45,4 +45,4 @@ The model is also simple, but well designed:
  * A non-square appearance has been avoided in all circumstances, but some parts are angled
  * UVs are well laid out, and several face parts mirror and duplicate sprites with clever UV usage to use less texture space
  * Clipping textures have been avoided with tiny offsets
- * Only three textures are used (the third is necessarily seperate as it is an emission map)
+ * Only three textures are used (the third is a necessarily seperate emission map)
