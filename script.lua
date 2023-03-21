@@ -431,52 +431,6 @@ events.RENDER:register(function(delta, context)
 
 		tailAngleT = tailAngleT * A
 	end
-	--elseif player:isOnGround() and player:isSprinting() then
-	--	t1T = 10.0
-	--	t2T = 10.0
-	--	ts = 0.5
-	--	tailAngleT = A * 4
-	--	tailSpeedT = 1.0
-	--	tailRate = 0.1
-	--elseif (not player:isInLava()) and (not player:isInWater()) and (not player:isClimbing()) and (not player:isGliding()) and v:length() > 0 then
-	--	if v.y == 0 then
-	--		if hv.y > 0 then
-	--			t1T = erp(37.5, 15.0, hv.y, 0.1)
-	--			t2T = erp(25.0, 15.0, hv.y, 0.1)
-	--		else
-	--			t1T = erp(37.5, 42.5, -hv.y, 0.1)
-	--			t2T = erp(25.0, 30, -hv.y, 0.1)
-	--		end
-	--		ts = 0.25
-	--		tailAngleT = A * 2
-	--		tailSpeedT = 2.0/4
-	--		tailRate = 0.5
-	--	elseif v.y < 0 then
-	--		t1T = -60
-	--		t2T = -5
-	--		t3T = -5
-	--		ts = -1.0 / (v.y * 4)
-	--		tailAngleT = A * 4
-	--		tailSpeedT = 1.0
-	--		tailRate = 0.5
-	--	else
-	--		t1T = 60
-	--		t2T = 20.0
-	--		t3T = 5.0
-	--		ts = 1.0 / (v.y * 20)
-	--		tailAngleT = A
-	--		tailSpeedT = 1.0/4.0
-	--		tailRate = 4.0
-	--	end
-	--else
-	--	t1T = 37.5
-	--	t2T = 25.0
-	--	t3T = 10.0
-	--	ts = 0.5
-	--	tailAngleT = A
-	--	tailSpeedT = 1.0/4.0
-	--	tailRate = 1.0
-	--end
 
 	SetWetness(d)
 
@@ -722,11 +676,9 @@ function randFaceVec(minx, miny, minz, maxx, maxy, maxz)
 	xArea = (maxy - miny) * (maxz - minz)
 	yArea = (maxx - minx) * (maxz - minz)
 	zArea = (maxx - minx) * (maxy - miny)
-	tArea = xArea + yArea --+ zArea
+	tArea = xArea + yArea
 	
 	xArea = xArea / tArea * 100
-	--yArea = yArea / tArea * 100 + xArea
-	--zArea = 100
 
 	sel = math.random(0, 100)
 
@@ -740,11 +692,8 @@ function randFaceVec(minx, miny, minz, maxx, maxy, maxz)
 
 	if sel < xArea then
 		v.x = math.round((v.x - minx) / (maxx - minx)) * (maxx - minx) + minx
-	--elseif sel < yArea then
 	else
 		v.y = math.round((v.y - miny) / (maxy - miny)) * (maxy - miny) + miny
-	--else
-	--	v.z = math.round((v.z - minz) / (maxz - minz)) * (maxz - minz) + minz
 	end
 
 	angle = math.rad(player:getBodyYaw(delta))
