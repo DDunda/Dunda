@@ -1,6 +1,7 @@
 # DundaFigura
 This is my custom model for Minecraft using the Figura mod.
 
+## Script
 It has an extensive script for a high amount of personality and situational awareness, including:
  * A dynamic tail that reacts to motion, crouching, and riding vehicles:
    * Different wagging speeds
@@ -38,7 +39,8 @@ It has an extensive script for a high amount of personality and situational awar
  * Tucking the ears under helmets
  * Occasionally twitching an ear
  
-The model is also simple, but well designed:
+## Model
+The model is simple, but well designed:
  * Non-cube meshes have been optimised to reduce faces
  * The skin layers are 3D (except for the head), and aligned to body pixels
  * The tail segments pivots are set such that the tail is nicely flush in most circumstances
@@ -46,3 +48,7 @@ The model is also simple, but well designed:
  * UVs are well laid out, and several face parts mirror and duplicate sprites with clever UV usage to use less texture space
  * Clipping textures have been avoided with tiny offsets
  * Only three textures are used (the third is a necessarily seperate emission map)
+
+## Credits
+Made with the help of FanYang's non-official documentation
+https://applejuiceyy.github.io/figs/
