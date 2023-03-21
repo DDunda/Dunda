@@ -10,9 +10,9 @@ It has an extensive script for a high amount of personality and situational awar
    * Sleeping
    * Damage/Death
    * Squinting underwater
-   * Blindness
-   * Night vision (glowing in the dark)
-   * 'Hero of the village'
+   * Blindness (eyes are closed)
+   * Night vision (eyes glow in the dark)
+   * 'Hero of the village' (blushing)
    * Surprise:
      * While falling a far distance
      * While moving very fast
@@ -21,7 +21,7 @@ It has an extensive script for a high amount of personality and situational awar
      * While levitating
      * While glowing
    * Pain:
-     * There is a pain value associated with how much health the player is missing, and how starving they are. There are three levels of pain, with face lines that express this and brows that become concerned.
+     * There is a pain value associated with how much health the player is missing, and how starving they are. There are three levels of pain, with face lines and unhappy eyebrows that can express this.
  * Custom emotes triggered by actions, synced with other players with pings, which can all be applied in any combination:
    * Blushing
    * Large eyes
