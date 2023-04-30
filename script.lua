@@ -1,7 +1,7 @@
 tail_0 = models.model.Body.tail0
 tail_1 = models.model.Body.tail0.tail1
 tail_2 = models.model.Body.tail0.tail1.tail2
-hood = models.model.Body.Hood
+hood = models.model.Body.Jacket.Hood
 
 ltuft1 = models.model.Head.LeftTufts.t1
 ltuft2 = models.model.Head.LeftTufts.t2
